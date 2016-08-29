@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alipay.xcscheme</key>
+		<key>Pay.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D470CDEC1D533A5A00C03634</key>
+		<key>B59D15EA1D7423760067B554</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D470CDEC1D533A5A00C03634"
-               BuildableName = "libAlipay.a"
-               BlueprintName = "Alipay"
-               ReferencedContainer = "container:Alipay.xcodeproj">
+               BlueprintIdentifier = "B59D15EA1D7423760067B554"
+               BuildableName = "libPay.a"
+               BlueprintName = "Pay"
+               ReferencedContainer = "container:Pay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D470CDEC1D533A5A00C03634"
-            BuildableName = "libAlipay.a"
-            BlueprintName = "Alipay"
-            ReferencedContainer = "container:Alipay.xcodeproj">
+            BlueprintIdentifier = "B59D15EA1D7423760067B554"
+            BuildableName = "libPay.a"
+            BlueprintName = "Pay"
+            ReferencedContainer = "container:Pay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D470CDEC1D533A5A00C03634"
-            BuildableName = "libAlipay.a"
-            BlueprintName = "Alipay"
-            ReferencedContainer = "container:Alipay.xcodeproj">
+            BlueprintIdentifier = "B59D15EA1D7423760067B554"
+            BuildableName = "libPay.a"
+            BlueprintName = "Pay"
+            ReferencedContainer = "container:Pay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
