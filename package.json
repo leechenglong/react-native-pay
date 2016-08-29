@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "pay",
+  "main": "index.ios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leechenglong/react-native-pay.git"
+  },
+  "keywords": [
+    "pay"
+  ],
+  "author": "lichenglong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leechenglong/react-native-pay/issues"
+  },
+  "homepage": "https://github.com/leechenglong/react-native-pay#readme"
+}
