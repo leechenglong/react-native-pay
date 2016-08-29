@@ -1,5 +1,5 @@
 {
-  "name": "react-native-pay”,
+  "name": "react-native-pay",
   "version": "1.0.0",
   "description": "pay",
   "main": "index.ios.js",
@@ -13,8 +13,8 @@
   "keywords": [
     "pay"
   ],
-  "author": "lichenglong",
-  "license": "ISC",
+  "author": "leechenglong",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/leechenglong/react-native-pay/issues"
   },
