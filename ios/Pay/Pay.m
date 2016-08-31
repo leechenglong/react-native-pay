@@ -8,8 +8,9 @@
 
 #import "Pay.h"
 
-#import <AlipaySDK/AlipaySDK.h>
 #import "Alipay.h"
+#import "WechatPay.h"
+#import "UnionPay.h"
 
 @implementation Pay
 
@@ -17,9 +18,22 @@ RCT_EXPORT_MODULE(Pay);
 
 //抛出支付接口
 RCT_EXPORT_METHOD(switchPayMethod:(NSString *)prePayInfo methodCode:(NSString *)methodCode resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
-{
-    //支付宝支付
-    [Alipay switchPayMethod:prePayInfo methodCode:methodCode resolver:resolve rejecter:reject];
+{    
+    if ([methodCode isEqualToString:@"alipay"]) {
+        //支付宝支付
+        [Alipay switchPayMethod:prePayInfo methodCode:methodCode resolver:resolve rejecter:reject];
+    }
+    else if ([methodCode isEqualToString:@"unionpay"]){
+        //union支付
+        [UnionPay switchPayMethod:prePayInfo methodCode:methodCode resolver:resolve rejecter:reject];
+    }
+    else if ([methodCode isEqualToString:@"wetchat"]){
+        //微信支付
+        [WechatPay switchPayMethod:prePayInfo methodCode:methodCode resolver:resolve rejecter:reject];
+    }
+    else{
+        NSLog(@"未知的支付方式 %@", methodCode);
+    }
 }
 
 //处理支付宝支付回调
@@ -29,6 +43,23 @@ RCT_EXPORT_METHOD(switchPayMethod:(NSString *)prePayInfo methodCode:(NSString *)
     
     return YES;
 }
+
+//处理微信支付回调
++ (BOOL)parseWechatPayURL:(NSURL *)url{
+    
+    [WechatPay wechatParse:url];
+    
+    return YES;
+}
+
+//处理Union支付回调
++ (BOOL)parseUnionPayURL:(NSURL *)url{
+    
+    [UnionPay unionParse:url];
+    
+    return YES;
+}
+
 
 //RCT_REMAP_METHOD(pay, payInfo:(NSString *)payInfo resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 //{

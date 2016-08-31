@@ -1,6 +1,6 @@
 {
   "name": "react-native-pay",
-  "version": "1.0.0",
+  "version": “1.0.1”,
   "description": "pay",
   "main": "index.ios.js",
   "scripts": {

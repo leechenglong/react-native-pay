@@ -11,6 +11,10 @@
 		B59D15F11D7423760067B554 /* Pay.m in Sources */ = {isa = PBXBuildFile; fileRef = B59D15F01D7423760067B554 /* Pay.m */; };
 		B59D15FB1D7423FC0067B554 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59D15FA1D7423FC0067B554 /* AlipaySDK.framework */; };
 		B59D16031D7425C90067B554 /* Alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B59D16021D7425C90067B554 /* Alipay.m */; };
+		B5E4D88D1D76808C00736B07 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E4D8891D76808C00736B07 /* libWeChatSDK.a */; };
+		B5E4D8901D7682E700736B07 /* WechatPay.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D88F1D7682E700736B07 /* WechatPay.m */; };
+		B5E4D8A91D768C0700736B07 /* UnionPay.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4D8A81D768C0700736B07 /* UnionPay.m */; };
+		B5E4D8BC1D76934A00736B07 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E4D8BB1D76934A00736B07 /* libPaymentControl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +38,16 @@
 		B59D15FA1D7423FC0067B554 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		B59D16011D7425C90067B554 /* Alipay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alipay.h; sourceTree = "<group>"; };
 		B59D16021D7425C90067B554 /* Alipay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alipay.m; sourceTree = "<group>"; };
+		B5E4D8891D76808C00736B07 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		B5E4D88A1D76808C00736B07 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		B5E4D88B1D76808C00736B07 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		B5E4D88C1D76808C00736B07 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		B5E4D88E1D7682E700736B07 /* WechatPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatPay.h; sourceTree = "<group>"; };
+		B5E4D88F1D7682E700736B07 /* WechatPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WechatPay.m; sourceTree = "<group>"; };
+		B5E4D8A71D768C0700736B07 /* UnionPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionPay.h; sourceTree = "<group>"; };
+		B5E4D8A81D768C0700736B07 /* UnionPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnionPay.m; sourceTree = "<group>"; };
+		B5E4D8BA1D76934400736B07 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		B5E4D8BB1D76934A00736B07 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E4D88D1D76808C00736B07 /* libWeChatSDK.a in Frameworks */,
 				B59D15FB1D7423FC0067B554 /* AlipaySDK.framework in Frameworks */,
+				B5E4D8BC1D76934A00736B07 /* libPaymentControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,8 @@
 		B59D15F71D7423FC0067B554 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				B5E4D8871D76804F00736B07 /* UnionPay */,
+				B5E4D8881D76804F00736B07 /* WechatPay */,
 				B59D15F81D7423FC0067B554 /* Alipay */,
 			);
 			path = SDK;
@@ -95,6 +113,8 @@
 		B59D15FC1D7424340067B554 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B5E4D8851D76804400736B07 /* UnionPay */,
+				B5E4D8861D76804400736B07 /* WechatPay */,
 				B59D15FD1D7424340067B554 /* Alipay */,
 			);
 			path = src;
@@ -107,6 +127,44 @@
 				B59D16021D7425C90067B554 /* Alipay.m */,
 			);
 			path = Alipay;
+			sourceTree = "<group>";
+		};
+		B5E4D8851D76804400736B07 /* UnionPay */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D8A71D768C0700736B07 /* UnionPay.h */,
+				B5E4D8A81D768C0700736B07 /* UnionPay.m */,
+			);
+			path = UnionPay;
+			sourceTree = "<group>";
+		};
+		B5E4D8861D76804400736B07 /* WechatPay */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D88E1D7682E700736B07 /* WechatPay.h */,
+				B5E4D88F1D7682E700736B07 /* WechatPay.m */,
+			);
+			path = WechatPay;
+			sourceTree = "<group>";
+		};
+		B5E4D8871D76804F00736B07 /* UnionPay */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D8BB1D76934A00736B07 /* libPaymentControl.a */,
+				B5E4D8BA1D76934400736B07 /* UPPaymentControl.h */,
+			);
+			path = UnionPay;
+			sourceTree = "<group>";
+		};
+		B5E4D8881D76804F00736B07 /* WechatPay */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4D8891D76808C00736B07 /* libWeChatSDK.a */,
+				B5E4D88A1D76808C00736B07 /* WechatAuthSDK.h */,
+				B5E4D88B1D76808C00736B07 /* WXApi.h */,
+				B5E4D88C1D76808C00736B07 /* WXApiObject.h */,
+			);
+			path = WechatPay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E4D8A91D768C0700736B07 /* UnionPay.m in Sources */,
+				B5E4D8901D7682E700736B07 /* WechatPay.m in Sources */,
 				B59D15F11D7423760067B554 /* Pay.m in Sources */,
 				B59D16031D7425C90067B554 /* Alipay.m in Sources */,
 			);
@@ -265,6 +325,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Pay/SDK/WechatPay",
+					"$(PROJECT_DIR)/Pay/SDK/UnionPay",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pay/SDK/WechatPay",
+					"$(PROJECT_DIR)/Pay/SDK/UnionPay",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +349,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Pay/SDK/WechatPay",
+					"$(PROJECT_DIR)/Pay/SDK/UnionPay",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pay/SDK/WechatPay",
+					"$(PROJECT_DIR)/Pay/SDK/UnionPay",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

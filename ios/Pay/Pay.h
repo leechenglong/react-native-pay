@@ -15,4 +15,10 @@
 //处理支付宝支付回调
 + (BOOL)parseAlipayURL:(NSURL *)url;
 
+//处理微信支付回调
++ (BOOL)parseWechatPayURL:(NSURL *)url;
+
+//处理Union支付回调
++ (BOOL)parseUnionPayURL:(NSURL *)url;
+
 @end
